@@ -21,7 +21,6 @@
 
 - name: Get Jenkins master installed
   hosts: jenkins_masters
-  become: true
   tasks:
     - name: Get repo Jenkins
       become: true
@@ -35,6 +34,11 @@
         key: https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
         state: present
         validate_certs: false
+    - name: Install epel-release
+      become: true
+      yum:
+        name: epel-release
+        state: present
     - name: Install Jenkins and requirements
       become: true
       yum:
@@ -88,25 +92,31 @@
         name:
           - git
           - python3
-          - docker
-          - containerd
-          - runc 
-          - container-selinux
-          - cni-plugins
-          - oci-add-hooks
-          - amazon-ecr-credential-helper
-          - udica
-          - ansible-core 
-          - ansible 
-          - python3-psutil 
-          - sshpass
-          - python3-pip
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
         state: present
-    - name: Update pip using yum
+    - name: Update pip
       become_user: root
-      yum:
-        name: python3-pip
-        state: latest
+      pip:
+        executable: pip3
+        name: pip
+        extra_args: --upgrade
+    - name: Install Ansible
+      become_user: root
+      pip:
+        executable: pip3
+        name:
+          - selinux
+          - ansible<3.0
+        state: present
+    - name: Reinstall Selinux
+      become_user: root
+      pip:
+        executable: pip3
+        name:
+          - selinux
+        state: forcereinstall
     - name: Add local to PATH
       lineinfile:
         dest: ~/.bashrc
