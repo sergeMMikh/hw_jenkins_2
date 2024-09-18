@@ -1,11 +1,20 @@
 # Домашнее задание к занятию 10 «Jenkins» - Михалёв Сергей
-
+-----
 ## Подготовка к выполнению
 
 1. Создать два VM: для jenkins-master и jenkins-agent.
 2. Установить Jenkins при помощи playbook.
 3. Запустить и проверить работоспособность.
 4. Сделать первоначальную настройку.
+
+**Решение**
+Создал две ВМ чеорез Vagrant с фиксированными IP. Создал [`ansible.cfg`](infrastructure/ansible.cfg). Внёс информацию в ['inventory'](inventory/cicd/hosts.yml)</br>
+Установиk Jenkins при помощи playbook `ansible-playbook site.yml`</br>
+<img src="images/Task_0_0.png" alt="Task_0_0.png" width="700" height="auto"></br>
+Подключил `ansible agent` и отключил выполнение сборок на `master node`. Создал на ВМ `ansible agent` swap файл на 1Gb.</br>
+<img src="images/Task_0_1.png" alt="Task_0_1.png" width="700" height="auto"></br>
+
+-----
 
 ## Основная часть
 
