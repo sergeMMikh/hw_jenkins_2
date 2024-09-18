@@ -19,6 +19,13 @@
 8. Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
 9. Сопроводите процесс настройки скриншотами для каждого пункта задания!!
 
+### Решение
+
+1. Сделал Freestyle Job, который будет запускать `molecule test` из любого вашего репозитория с ролью</br>
+   <img src="images/Task_1_1.png" alt="Task_1_1.png" width="700" height="auto"></br>
+   Результат тестирования роли [`clickhouse`](https://github.com/sergeMMikh/role-clickhouse) в выводе консоли.</br>
+   <img src="images/Task_1_2.png" alt="Task_1_2.png" width="700" height="auto"></br>
+
 ## Необязательная часть
 
 1. Создать скрипт на groovy, который будет собирать все Job, завершившиеся хотя бы раз неуспешно. Добавить скрипт в репозиторий с решением и названием `AllJobFailure.groovy`.
