@@ -37,11 +37,10 @@
    <img src="images/Task_1_2.png" alt="Task_1_2.png" width="500" height="auto"></br>
    </br>
 2. Сделаk Declarative Pipeline Job, который будет запускать `molecule test` из репозитория с ролью.</br>
-   <img src="images/Task_2_1.png" alt="Task_2_1.png" width="500" height="auto"></br>
-   Сам кода pipeline. *Прекрасно понимаю что для выполнения действий, связанных с GitHub стоило воспользоваться [плагином](https://www.jenkins.io/doc/pipeline/steps/git/) с соответствующим синтаксисом. Но здесь использовал возможность успользования shell.*</br>
-   <img src="images/Task_2_2.png" alt="Task_2_2.png" width="500" height="auto"></br>
+   <img src="images/Task_2_2_.png" alt="Task_2_1.png" width="500" height="auto"></br>
    Результат тестирования роли [`clickhouse`](https://github.com/sergeMMikh/role-clickhouse) в выводе консоли.</br>
-   <img src="images/Task_2_3.png" alt="Task_2_3.png" width="500" height="auto"></br>
+   <img src="images/Task_2_3_.png" alt="Task_2_3.png" width="500" height="auto"></br>
+3. Перенёс Declarative Pipeline в репозиторий в файл [`Jenkinsfile`](https://github.com/sergeMMikh/role-clickhouse/blob/master/Jenkinsfile).
 
 
 ---
