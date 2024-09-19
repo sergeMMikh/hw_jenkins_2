@@ -43,6 +43,7 @@
    Результат тестирования роли [`clickhouse`](https://github.com/sergeMMikh/role-clickhouse) в выводе консоли.</br>
    <img src="images/Task_2_3_.png" alt="Task_2_3.png" width="500" height="auto"></br>
 3. Перенёс Declarative Pipeline в репозиторий в файл [`Jenkinsfile`](https://github.com/sergeMMikh/role-clickhouse/blob/master/Jenkinsfile).
-
+4. Создал Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.</br>
+   <img src="images/Task_4_1.png" alt="Task_4_1.png" width="500" height="auto"></br>
 
 ---
