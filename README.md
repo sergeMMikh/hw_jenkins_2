@@ -39,7 +39,7 @@
 2. Сделаk Declarative Pipeline Job, который будет запускать `molecule test` из репозитория с ролью.</br>
    <img src="images/Task_2_2_.png" alt="Task_2_2.png" width="500" height="auto"></br>
    Так как данный Pipeline связан с репозиторием на GitHub, в списке шагов добавился `Checkout SCM`.</br>
-   <img src="images/Task_2_1_.png" alt="Task_2_1.png" width="350" height="auto"></br>
+   <img src="images/Task_2_1_.png" alt="Task_2_1.png" width="400" height="auto"></br>
    После установки [устаревшего](https://wiki.jenkins.io/JENKINS/Pipeline-Stage-View-Plugin.html) плагина [`Pipeline: Stage View`](https://plugins.jenkins.io/pipeline-stage-view/)стало нагляднее.</br>
    <img src="images/Task_2_1_1.png" alt="Task_2_1_1.png" width="350" height="auto"></br>
    Результат тестирования роли [`clickhouse`](https://github.com/sergeMMikh/role-clickhouse) в выводе консоли.</br>
@@ -48,10 +48,10 @@
 4. Создал Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.</br>
    <img src="images/Task_4_1.png" alt="Task_4_1.png" width="500" height="auto"></br>
 5. Создал Scripted Pipeline, наполнить его скриптом из требуемого репозитория.</br>
-   <img src="images/Task_5_1.png" alt="Task_5_1.png" width="350" height="auto"></br>
+   <img src="images/Task_5_1.png" alt="Task_5_1.png" width="400" height="auto"></br>
 6. Внёс необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True). По умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.</br>
-   <img src="images/Task_6_1.png" alt="Task_6_1.png" width="350" height="auto"></br>
-   <img src="images/Task_6_2.png" alt="Task_6_2.png" width="350" height="auto"></br>
+   <img src="images/Task_6_1.png" alt="Task_6_1.png" width="400" height="auto"></br>
+   <img src="images/Task_6_2.png" alt="Task_6_2.png" width="400" height="auto"></br>
 7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл [`ScriptedJenkinsfile`](ScriptedJenkinsfile).
 8. Ссылку на [репозиторий с ролью](https://github.com/sergeMMikh/role-clickhouse) и [`Declarative Pipeline`](https://github.com/sergeMMikh/hw_jenkins_2/blob/main/Declarative%20Pipeline) и [`Scripted Pipeline`](https://github.com/sergeMMikh/hw_jenkins_2/blob/main/Scripted%20Pipeline).
 ---
