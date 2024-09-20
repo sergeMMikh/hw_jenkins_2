@@ -40,6 +40,8 @@
    <img src="images/Task_2_2_.png" alt="Task_2_2.png" width="500" height="auto"></br>
    Так как данный Pipeline связан с репозиторием на GitHub, в списке шагов добавился `Checkout SCM`.</br>
    <img src="images/Task_2_1_.png" alt="Task_2_1.png" width="350" height="auto"></br>
+   После установки [устаревшего](https://wiki.jenkins.io/JENKINS/Pipeline-Stage-View-Plugin.html) плагина [`Pipeline: Stage View`](https://plugins.jenkins.io/pipeline-stage-view/)стало нагляднее.</br>
+   <img src="images/Task_2_1_1.png" alt="Task_2_1_1.png" width="350" height="auto"></br>
    Результат тестирования роли [`clickhouse`](https://github.com/sergeMMikh/role-clickhouse) в выводе консоли.</br>
    <img src="images/Task_2_3_.png" alt="Task_2_3.png" width="500" height="auto"></br>
 3. Перенёс Declarative Pipeline в репозиторий в файл [`Jenkinsfile`](https://github.com/sergeMMikh/role-clickhouse/blob/master/Jenkinsfile).
