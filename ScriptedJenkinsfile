@@ -1,0 +1,28 @@
+properties([
+    parameters([
+        booleanParam(name: 'prod_run', defaultValue: false, description: 'Run in production mode without --check --diff')
+    ])
+])
+
+node("amazon"){
+    stage("Git checkout"){
+        git credentialsId: 'mult', url: 'https://github.com/sergeMMikh/example-playbook.git'
+    }
+    stage("Sample define secret_check"){
+        secret_check=true
+    }
+    stage("Run playbook"){
+        if (secret_check){
+            if (params.prod_run) {
+                echo 'Running Ansible Playbook in production mode'
+                sh 'ansible-playbook site.yml -i inventory/prod.yml'
+            } else {
+                echo 'Running Ansible Playbook in check mode with diff'
+                sh 'ansible-playbook site.yml -i inventory/prod.yml --check --diff'
+            }
+        }
+        else{
+            echo 'need more action'
+        }
+    }
+}
