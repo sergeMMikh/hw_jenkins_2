@@ -47,5 +47,6 @@
 3. Перенёс Declarative Pipeline в репозиторий в файл [`Jenkinsfile`](https://github.com/sergeMMikh/role-clickhouse/blob/master/Jenkinsfile).
 4. Создал Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.</br>
    <img src="images/Task_4_1.png" alt="Task_4_1.png" width="500" height="auto"></br>
-
+5. Создал Scripted Pipeline, наполнить его скриптом из требуемого репозитория.</br>
+   <img src="images/Task_5_1.png" alt="Task_5_1.png" width="350" height="auto"></br>
 ---
