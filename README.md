@@ -31,7 +31,7 @@
 
 ### Решение
 
-1. Сделал Freestyle Job, который будет запускать `molecule test` из репозитория с ролью.</br>
+1. Сделал Freestyle Job, который будет запускать `molecule test` из [репозитория с ролью](https://github.com/sergeMMikh/role-clickhouse.git).</br>
    <img src="images/Task_1_1.png" alt="Task_1_1.png" width="500" height="auto"></br>
    Результат тестирования роли [`clickhouse`](https://github.com/sergeMMikh/role-clickhouse) в выводе консоли.</br>
    <img src="images/Task_1_2.png" alt="Task_1_2.png" width="500" height="auto"></br>
