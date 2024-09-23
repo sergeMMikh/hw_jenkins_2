@@ -8,7 +8,7 @@
 4. Сделать первоначальную настройку.
 
 **Решение**
-Создал две ВМ чеорез Vagrant с фиксированными IP. Создал [`ansible.cfg`](infrastructure/ansible.cfg). Внёс информацию в ['inventory'](https://github.com/sergeMMikh/hw_jenkins_2/blob/main/infrastructure/inventory/cicd/hosts.yml)</br>
+Создал две ВМ чеорез Vagrant с фиксированными IP. Создал [`ansible.cfg`](infrastructure/ansible.cfg). Внёс информацию в [`inventory`](infrastructure/inventory/cicd/hosts.yml)</br>
 Установиk Jenkins при помощи playbook `ansible-playbook site.yml`</br>
 <img src="images/Task_0_0.png" alt="Task_0_0.png" width="700" height="auto"></br>
 Подключил `ansible agent` и отключил выполнение сборок на `master node`. Создал на ВМ `ansible agent` swap файл на 1Gb.</br>
